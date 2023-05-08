@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilologin.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="caixa-login">
+    <img src="https://www.diariodepernambuco.com.br/static/portlet/733/25314/20200214165523721362i.jpg" alt="Diario de Pernambuco" title="Diario de Pernambuco" class="logo">
+    <h2>Login</h2>
+    <p>Entre na sua conta para continuar.</p>
+    <div class="caixa">
+    <form action="http://localhost:3000/login" method="post">
+        <input type="text" id="caixai" name="email" class="login" placeholder="Email">
+        <input type="password" id="caixai1" name="senha" class="senha" placeholder="Senha">
+        <div class="entrar">
+        <button id="meuBotao" name="meuBotao" class="button_top" onclick="validarFormulario()">Entrar</a></button>
+        <p style="color: rgb(34, 131, 196); margin-top: -6%;">Esqueci minha senha.</p>
+        <p > Não tem uma conta? <a href="http://localhost:3000/registro.html">Cadastre-se</a></p>
+    </div>
+    </form>
+    </div>
+    </div>
+    <script src="teste.js"></script>
+</body>
+<script src="login.js"></script>
+</html>

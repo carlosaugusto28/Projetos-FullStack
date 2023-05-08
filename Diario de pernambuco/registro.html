@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloregistro.css">
+    <title>Registre-se</title>
+</head>
+<body>
+    <h1 align ="center"><img alt="Diario de Pernambuco" title="Diario de Pernambuco" class="align-bottom img-fluid" src="https://www.diariodepernambuco.com.br/static/portlet/733/25314/20200214165523721362i.jpg"></h1>
+    <hr>
+    <div class="form-container">
+    <h2> Preencha os dados para realizar seu cadastro:</h2>
+    <form id="formulario" action="http://localhost:3000/cadastro" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+        <br>
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" required><br>
+        <br>
+        <label for="numero">Insira seu numero:</label>
+        <input type="number" id="telefone" name="telefone" required><br>
+        <br>
+        <label for="idade">Idade:</label>
+        <input type="date" id="idade" name="idade" required><br>
+        <br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br>
+        <br>
+        <div class="botaoquiz">
+            <button class="irquiz" type="submit">Registrar</button>
+            <button class="voltardiaro" onclick="window.location.href ='http://localhost:3000/noticia.html'">Voltar ao diario</button>
+            
+        </div>
+    </form>
+    </div>
+    <script src="teste.js"></script>
+    <script>
+        document.getElementById("formulario").addEventListener("submit", function(event){
+            event.preventDefault()
+            alert("Usuário registrado!!")
+            window.location.href = "http://localhost:3000/login.html"
+            this.submit()
+        })
+    </script>
+</body>
+<script src="registro.js"></script>
+</html>
